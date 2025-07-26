@@ -1,0 +1,20 @@
+f dien_tich_hinh_vuong(canh):
+    if n <= 0:
+        return ko tm
+    return canh * canh
+def dien_tich_hcn(dai, rong):
+    if dai <= 0 or rong <= 0:
+        return ko tm
+    return dai * rong
+def dien_tich_htron(ban_kinh):
+    if ban_kinh <= 0:
+        return ko tm
+    return ban_kinh ** 2 * math.pi
+def dien_tich_tam_giac(a, b, c):
+    if a <= 0 or b <= 0 or c <= 0:
+        return ko tm
+    if a + b <= c or b + c <= a or a + c <= b:
+        return ko tm
+    s = (a + b + c) / 2
+    dien_tich = math.sprt(s * (s - a) * (s - b) * (s - c))
+    return dien_tich
