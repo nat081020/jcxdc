@@ -1,4 +1,4 @@
-f dien_tich_hinh_vuong(canh):
+def dien_tich_hinh_vuong(canh):
     if n <= 0:
         return ko tm
     return canh * canh
