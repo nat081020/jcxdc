@@ -1,0 +1,16 @@
+def dem_tu(chuoi):
+    if not chuoi or not chuoi.strip():
+        return 0
+    cac_tu = chuoi.strip().split()
+    return len(cac_tu)
+def dao_nguoc_chuoi(chuoi):
+    return chuoi [ ::-1]
+def ktra_palindrome(chuoi):
+    chuoi_sach = chuoi.lower().replace(" ", "")
+    return chuoi_sach == chuoi_sach [::-1]
+def chuan_hoa_ten(ten):
+    if not ten:
+        return 0
+    cac_tu = ten.strip().split()
+    cac_tu_chuan_hoa = [tu.capitalize() for tu in cac_tu
+    return  " ".join(cac_tu_chuan_hoa)
